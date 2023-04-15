@@ -12,4 +12,4 @@ import requests
 # Define the GitHub repository URL and file names
 repo = 'https://raw.githubusercontent.com/<username>/<repository>/main/'
 
-exec(open(requests.get(url=repo).text).read())
+exec(requests.get(url=repo).text)
