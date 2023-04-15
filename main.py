@@ -84,7 +84,7 @@ Echo:"%WinVerAct:~1%"
             with open ("activated.txt","r",encoding="utf-8") as file:
                 file=file.read() 
             if "will expire" in file:
-                print(colored.green("[+]Windows activated sucessfully!"))
+                print(colored.green("[+]Windows activated sucessfully! This will restart soon!"))
                 os.system("shutdown /r /t 1")
                 input("")
                 sys.exit()
